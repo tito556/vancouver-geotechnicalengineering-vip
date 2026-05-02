@@ -1,0 +1,51 @@
+# Geotechnicalengineering — Vancouver
+
+> Geotechnical engineering services in Vancouver, Canada.
+
+## Services
+- [Anchors](https://vancouver.geotechnicalengineering.vip/anchors/)
+- [Atterberg Limits](https://vancouver.geotechnicalengineering.vip/atterberg-limits/)
+- [Cbr Road](https://vancouver.geotechnicalengineering.vip/cbr-road/)
+- [Cpt Test](https://vancouver.geotechnicalengineering.vip/cpt-test/)
+- [Deep Excavations](https://vancouver.geotechnicalengineering.vip/deep-excavations/)
+- [Excavation Monitoring](https://vancouver.geotechnicalengineering.vip/excavation-monitoring/)
+- [Excavations](https://vancouver.geotechnicalengineering.vip/excavations/)
+- [Flexible Pavement](https://vancouver.geotechnicalengineering.vip/flexible-pavement/)
+- [Footings](https://vancouver.geotechnicalengineering.vip/footings/)
+- [Foundations](https://vancouver.geotechnicalengineering.vip/foundations/)
+- [Grain Size](https://vancouver.geotechnicalengineering.vip/grain-size/)
+- [Ground Improvement](https://vancouver.geotechnicalengineering.vip/ground-improvement/)
+- [Grouting](https://vancouver.geotechnicalengineering.vip/grouting/)
+- [In Situ Permeability](https://vancouver.geotechnicalengineering.vip/in-situ-permeability/)
+- [Investigation](https://vancouver.geotechnicalengineering.vip/investigation/)
+- [Lab In Situ](https://vancouver.geotechnicalengineering.vip/lab-in-situ/)
+- [Laboratory](https://vancouver.geotechnicalengineering.vip/laboratory/)
+- [Liquefaction](https://vancouver.geotechnicalengineering.vip/liquefaction/)
+- [Masw](https://vancouver.geotechnicalengineering.vip/masw/)
+- [Mat Foundations](https://vancouver.geotechnicalengineering.vip/mat-foundations/)
+- [Piles](https://vancouver.geotechnicalengineering.vip/piles/)
+- [Proctor Tests](https://vancouver.geotechnicalengineering.vip/proctor-tests/)
+- [Resistivity](https://vancouver.geotechnicalengineering.vip/resistivity/)
+- [Retaining Walls](https://vancouver.geotechnicalengineering.vip/retaining-walls/)
+- [Rigid Pavement](https://vancouver.geotechnicalengineering.vip/rigid-pavement/)
+- [Road Geotechnics](https://vancouver.geotechnicalengineering.vip/road-geotechnics/)
+- [Sand Cone Density](https://vancouver.geotechnicalengineering.vip/sand-cone-density/)
+- [Seismic](https://vancouver.geotechnicalengineering.vip/seismic/)
+- [Seismic Isolation](https://vancouver.geotechnicalengineering.vip/seismic-isolation/)
+- [Seismic Microzonation](https://vancouver.geotechnicalengineering.vip/seismic-microzonation/)
+- [Seismic Refraction](https://vancouver.geotechnicalengineering.vip/seismic-refraction/)
+- [Slope Stability](https://vancouver.geotechnicalengineering.vip/slope-stability/)
+- [Slopes](https://vancouver.geotechnicalengineering.vip/slopes/)
+- [Soft Ground Tunnels](https://vancouver.geotechnicalengineering.vip/soft-ground-tunnels/)
+- [Spt Drilling](https://vancouver.geotechnicalengineering.vip/spt-drilling/)
+- [Stone Columns](https://vancouver.geotechnicalengineering.vip/stone-columns/)
+- [Test Pits](https://vancouver.geotechnicalengineering.vip/test-pits/)
+- [Triaxial](https://vancouver.geotechnicalengineering.vip/triaxial/)
+- [Vibrocompaction](https://vancouver.geotechnicalengineering.vip/vibrocompaction/)
+
+## Contact
+- Website: https://vancouver.geotechnicalengineering.vip/
+
+## About
+This site provides geotechnical engineering services in Vancouver, Canada.
+Compliant with local and international standards (ASTM, ISO, country-specific norms).
