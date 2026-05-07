@@ -11,5 +11,10 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
-  ]
+  ],
+  "lang": "en",
+  "orientation": "any",
+  "scope": "/",
+  "description": "Professional geotechnical services in Vancouver, Canada. Soil studies, testing and technical consulting.",
+  "id": "/vancouver-4893"
 }
