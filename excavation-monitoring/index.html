@@ -71,19 +71,36 @@ section.block{padding:3.5rem 0}
 .dd a{padding:.5rem 1.2rem;color:#18181B;font-size:.85rem;display:block;white-space:normal}
 .nav-item.has-dd{padding-bottom:1.5rem;margin-bottom:-1.5rem}.hero h1{font-size:1.6rem}
 .topbar{background:#09090B;color:#FFF;padding:0 2rem;display:flex;justify-content:space-between;align-items:center;height:80px;position:sticky;top:0;z-index:1010}
-section.block h2{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;color:#09090B;margin-bottom:1.2rem;font-weight:700;letter-spacing:-.01em}</style><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#831843"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head><body>
+section.block h2{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;color:#09090B;margin-bottom:1.2rem;font-weight:700;letter-spacing:-.01em}</style><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#831843"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style id="minimal-fix-v5">
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1010 !important;
+}
+header.hero, .hero { position: relative !important; }
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+  z-index: 1100 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
+</style>
+</head><body>
 
 <div class="topbar">
     <div class="logo-area">
         <div class="logo-text"><div class="main">GEOTECHNICALENGINEERING</div><div class="sub">VANCOUVER</div></div>
     </div>
     <div class="nav">
-        <div class="nav-item has-dd"><a href="/investigation/" class="nav-cat-link" style="color:inherit;text-decoration:none">Investigation</a> <span>▾</span><div class="dd"><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="/lab-in-situ/" class="nav-cat-link" style="color:inherit;text-decoration:none">In-Situ Testing</a> <span>▾</span><div class="dd"><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="nav-item has-dd"><a href="/laboratory/" class="nav-cat-link" style="color:inherit;text-decoration:none">Laboratory</a> <span>▾</span><div class="dd"><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a><a href="/atterberg-limits/">Atterberg limits</a></div></div><div class="nav-item has-dd"><a href="/foundations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Foundations</a> <span>▾</span><div class="dd"><a href="/piles/">Pile foundation design</a></div></div><div class="nav-item has-dd"><a href="/slopes/" class="nav-cat-link" style="color:inherit;text-decoration:none">Slopes & Walls</a> <span>▾</span><div class="dd"><a href="/slope-stability/">Slope stability analysis</a><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a></div></div><div class="nav-item has-dd"><a href="/ground-improvement/" class="nav-cat-link" style="color:inherit;text-decoration:none">Ground improvement</a> <span>▾</span><div class="dd"><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="nav-item has-dd"><a href="/excavations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Underground Excavations</a> <span>▾</span><div class="dd"><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div><div class="nav-item has-dd"><a href="/road-geotechnics/" class="nav-cat-link" style="color:inherit;text-decoration:none">Roadway</a> <span>▾</span><div class="dd"><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a><a href="/cbr-road/">CBR study for road design</a></div></div><div class="nav-item has-dd"><a href="/seismic/" class="nav-cat-link" style="color:inherit;text-decoration:none">Seismic</a> <span>▾</span><div class="dd"><a href="/liquefaction/">Soil liquefaction analysis</a><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a></div></div>
+        <div class="nav-item has-dd"><a href="/investigation/" class="nav-cat-link" style="color:inherit;text-decoration:none">Investigation</a> <span>▾</span><div class="dd"><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="/lab-in-situ/" class="nav-cat-link" style="color:inherit;text-decoration:none">In-Situ</a> <span>▾</span><div class="dd"><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="nav-item has-dd"><a href="/laboratory/" class="nav-cat-link" style="color:inherit;text-decoration:none">Laboratory</a> <span>▾</span><div class="dd"><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a><a href="/atterberg-limits/">Atterberg limits</a></div></div><div class="nav-item has-dd"><a href="/foundations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Foundations</a> <span>▾</span><div class="dd"><a href="/piles/">Pile foundation design</a></div></div><div class="nav-item has-dd"><a href="/slopes/" class="nav-cat-link" style="color:inherit;text-decoration:none">Slopes & Walls</a> <span>▾</span><div class="dd"><a href="/slope-stability/">Slope stability analysis</a><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a></div></div><div class="nav-item has-dd"><a href="/ground-improvement/" class="nav-cat-link" style="color:inherit;text-decoration:none">Improvement</a> <span>▾</span><div class="dd"><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="nav-item has-dd"><a href="/excavations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Excavations</a> <span>▾</span><div class="dd"><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div><div class="nav-item has-dd"><a href="/road-geotechnics/" class="nav-cat-link" style="color:inherit;text-decoration:none">Roadway</a> <span>▾</span><div class="dd"><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a><a href="/cbr-road/">CBR study for road design</a></div></div><div class="nav-item has-dd"><a href="/seismic/" class="nav-cat-link" style="color:inherit;text-decoration:none">Seismic</a> <span>▾</span><div class="dd"><a href="/liquefaction/">Soil liquefaction analysis</a><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a></div></div>
     </div>
 </div>
 
 <header class="hero"><div class="hero-inner">
-    <div class="crumb-87a7"><a href="/">Home</a> › <span>Underground Excavations</span> › <span>Geotechnical excavation monitoring</span></div>
+    <div class="crumb-87a7"><a href="/">Home</a> › <span>Excavations</span> › <span>Geotechnical excavation monitoring</span></div>
     <h1>Geotechnical Excavation Monitoring in Vancouver: Protecting Your Project from Shifting Ground</h1>
     <p class="tagline">Knowledgeable. Thorough. Resourceful.</p>
     <a class="hero-cta" href="#main-content">LEARN MORE</a>
@@ -105,9 +122,9 @@ section.block h2{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;color:#
         <div class="svc-card">
             <div class="card-img" style="background-image:url('/img/tuneles-suelo-blando-1.webp')"></div>
             <div class="card-body">
-                <h3>Underground Excavations</h3>
+                <h3>Excavations</h3>
                 <div class="card-links"><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels ›</a><a href="/deep-excavations/">Geotechnical design of deep excavations ›</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring ›</a></div>
-                <a class="card-viewall" href="#excavaciones-subterraneo">VIEW ALL UNDERGROUND EXCAVATIONS ›</a>
+                <a class="card-viewall" href="#excavaciones-subterraneo">VIEW ALL EXCAVATIONS ›</a>
             </div>
         </div>
         <div class="svc-card">
@@ -155,7 +172,7 @@ section.block h2{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;color:#
         <link rel="stylesheet" href="/css/leaflet.css">
         <script src="/js/leaflet.js"></script>
         <script>
-        (function(){
+(function(){
           var m=L.map("map_8c45af",{zoomControl:true,attributionControl:true}).setView([49.2609,-123.114],11);
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
