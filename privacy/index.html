@@ -519,6 +519,118 @@ aside, aside.sidebar, .sb-home, .sidebar {
   }
 }
 </style>
+<style id="srf-header-fix-v1">
+/* === FIX: header SRF truncado (todos los subs srf) — 2026-05-17 ===
+   Diagnóstico: 9 nav-items empujan logo fuera del viewport (body overflow-x:clip corta izq).
+   navbar-fixed-override dejó body{padding-top:60px} huérfano + sidebar-overflow-fix aplicó
+   color:#FFF en nav links (blanco sobre blanco). kill-sticky hizo position:static → OK pero
+   body padding quedó. Fix integral abajo. */
+
+/* 1. Eliminar padding-top huérfano (de navbar-fixed-override) */
+body { padding-top: 0 !important; }
+
+/* 2. Navbar sticky limpio — fondo blanco, z-index alto, sin desborde */
+nav.navbar {
+  position: sticky !important;
+  top: 0 !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  z-index: 1010 !important;
+  overflow: visible !important;
+  background: #FFF !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: .65rem 1rem !important;
+  gap: .5rem !important;
+}
+
+/* 3. Logo-area: NO squeezear, ancho mínimo garantizado */
+nav.navbar .logo-area {
+  flex-shrink: 0 !important;
+  min-width: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .6rem !important;
+  overflow: visible !important;
+}
+
+/* 4. Logo-box: visible, color correcto (blanco sobre negro) */
+nav.navbar .logo-box {
+  background: #141414 !important;
+  color: #FFF !important;
+  padding: .35rem .65rem !important;
+  font-size: .85rem !important;
+  font-weight: 900 !important;
+  flex-shrink: 0 !important;
+}
+
+/* 5. Logo-text: color oscuro sobre fondo blanco navbar */
+nav.navbar .logo-text {
+  color: #141414 !important;
+  font-size: .78rem !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+  white-space: nowrap !important;
+}
+
+/* 6. Nav items: texto OSCURO (navbar bg es blanco) — anula sidebar-overflow-fix color:#FFF */
+nav.navbar .nav-item,
+nav.navbar .nav-item a,
+nav.navbar .nav-cat-link,
+nav.navbar .nav-item span:not(.dd span) {
+  color: #141414 !important;
+  font-size: .72rem !important;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+}
+nav.navbar .nav-item a:hover,
+nav.navbar .nav-cat-link:hover {
+  color: #B08D4A !important;
+  text-decoration: none !important;
+}
+
+/* 7. Nav contenedor: flex-wrap para que los items no revienten el ancho */
+nav.navbar .nav {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: .3rem .5rem !important;
+  align-items: center !important;
+  overflow: visible !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  justify-content: flex-end !important;
+}
+
+/* 8. CTA button en navbar (si existe) */
+nav.navbar .cta-btn {
+  color: #141414 !important;
+  background: #B08D4A !important;
+  font-size: .7rem !important;
+  padding: .4rem .75rem !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+
+/* 9. Dropdown z-index sobre hero */
+nav.navbar .dd {
+  z-index: 1100 !important;
+  color: #141414 !important;
+}
+nav.navbar .dd a {
+  color: #141414 !important;
+  font-size: .82rem !important;
+}
+
+/* 10. Hero posición correcta (NO empujado por padding-top fantasma) */
+header.hero, .hero {
+  position: relative !important;
+  margin-top: 0 !important;
+  padding-top: 3rem !important;
+}
+</style>
 </head><body>
 <p><a href="/">← Home</a></p>
 <h1>Privacy Policy</h1>
